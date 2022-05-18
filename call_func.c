@@ -13,14 +13,13 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
         {"pall", pall_stack},
         {NULL, NULL}
     };
+    int index;
 
-    int index = 0;
-
-    for (index; ops[i].opcode != NULL; index++)
+    for (index = 0; ops[index].opcode != NULL; index++)
     {
-        if(strcmp(ops[i].opcode, command) == 0)
+        if(strcmp(ops[index].opcode, command) == 0)
         {
-            ops[i].f(stack, number_line);
+            ops[index].f(stack, number_line);
         }
     }
     fprintf(stderr, "L%u: unknown instructions <%s>", number_line, command);

@@ -5,10 +5,10 @@
  * 
  * 
  */
-void push(stack_t stack, unsigned int number_line)
+void push_stack(stack_t **stack, unsigned int number_line)
 {
     char *num = strtok(NULL, "\n\t\r ");
-    if(!add_stackint(&stack, atoi(num)))
+    if(!add_stackint(stack, atoi(num)))
     {
         fprintf(stderr, "L%u: usage: push integer\n", number_line);
         exit(EXIT_FAILURE);
@@ -20,10 +20,11 @@ void push(stack_t stack, unsigned int number_line)
  *
  * 
  */
-void pall(stack_t **stack, unsigned int number_line)
+void pall_stack(stack_t **stack, unsigned int number_line)
 {
-    (void)(number_line);
     stack_t *copy;
+    
+    (void)(number_line);
 
     copy = *stack;
     print_stackint(copy);
