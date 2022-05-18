@@ -11,7 +11,7 @@ size_t print_stackint(const stack_t *h)
 
 	while (h)
 	{
-		printf("%i\n", h->n);
+		fprintf(stdout, "%i\n", h->n);
 		h = h->next;
 		counter++;
 	}
