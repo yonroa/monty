@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <ctype.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -50,6 +51,7 @@ void pall_stack(stack_t **stack, unsigned int number_line);
 /* Aux Functions */
 char **tokener(char *str, char *delim);
 int counter(char *string);
+int _isdigit(char *c);
 
 /* Free Functions */
 void free_tokens(char **token);
