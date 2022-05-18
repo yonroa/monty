@@ -1,6 +1,6 @@
 # Stacks, Queues - LIFO, FIFO
 
-<img><https://lh3.googleusercontent.com/PZ4FM_ju7l-WXsTrXzDYbGzEhUKBO80q5PWqUWNUE-MPEdAVwM92w3xlvwISbGkNm1ZhK7K-BkBpNbL35YdJWoK6hPRn00bAZuS1gGZAyoHAJNUuoYTmrQ0usE5hnmtBhuDODJkIDhbc_WS_Sck9XmXrxxbWzdPOByPtMsX9SQsFsnB4ReemhTqW5dJT1cK8hRVAkU-Tfso6uofGPOQCySh5hIQMcciGXGjj1t__QLg9QydNnOSNOjU09AnPhkMrRgYXqIHrSjexeebmTe9GtzpZ_pgdh1MhlHRck6ss2HsxJmN3QNwrBjp78p9_cyp8eMfJGlGL8O-IyNylBAc5DWqFECZosT3v5gsgcu0ONNWZiO2g5tzouazOxlNmGgFpysLO6biHfszTcpn3OyUD710Qi2OPG9-9y0t0TB7julwzBn4zjtLdsqow0PW7EAudnjz6JMRkpDbDhYoAlsDFkXFKUBv78WhBRCBYEtNKeagLaIqJ7XNV6VC8wQspni_5LjQQUT5Ca6YukjMqccd_pOGpDaCODNp2hpNdXs_SqTtPBX_4PwPDNTHjkexRA3P81ngGAKd-GxRnvknx-Pm1Ly0pyYsQe80WsIoe-_DnPR66dQZv3avMf53U9OU381I9YIe8y8k5d2w040pvVO0QRIKM0xe0cR2R-CHuAwTcpk_1spuidjkAx3PIkJe8kEHTLO621MiRsNkvqPpk-7_MyvTHQ3aVmPV_VW2syUDqHIdYHx3plMLKhx_Awd5_=w681-h482-no?authuser=0>
+![img](https://lh3.googleusercontent.com/PZ4FM_ju7l-WXsTrXzDYbGzEhUKBO80q5PWqUWNUE-MPEdAVwM92w3xlvwISbGkNm1ZhK7K-BkBpNbL35YdJWoK6hPRn00bAZuS1gGZAyoHAJNUuoYTmrQ0usE5hnmtBhuDODJkIDhbc_WS_Sck9XmXrxxbWzdPOByPtMsX9SQsFsnB4ReemhTqW5dJT1cK8hRVAkU-Tfso6uofGPOQCySh5hIQMcciGXGjj1t__QLg9QydNnOSNOjU09AnPhkMrRgYXqIHrSjexeebmTe9GtzpZ_pgdh1MhlHRck6ss2HsxJmN3QNwrBjp78p9_cyp8eMfJGlGL8O-IyNylBAc5DWqFECZosT3v5gsgcu0ONNWZiO2g5tzouazOxlNmGgFpysLO6biHfszTcpn3OyUD710Qi2OPG9-9y0t0TB7julwzBn4zjtLdsqow0PW7EAudnjz6JMRkpDbDhYoAlsDFkXFKUBv78WhBRCBYEtNKeagLaIqJ7XNV6VC8wQspni_5LjQQUT5Ca6YukjMqccd_pOGpDaCODNp2hpNdXs_SqTtPBX_4PwPDNTHjkexRA3P81ngGAKd-GxRnvknx-Pm1Ly0pyYsQe80WsIoe-_DnPR66dQZv3avMf53U9OU381I9YIe8y8k5d2w040pvVO0QRIKM0xe0cR2R-CHuAwTcpk_1spuidjkAx3PIkJe8kEHTLO621MiRsNkvqPpk-7_MyvTHQ3aVmPV_VW2syUDqHIdYHx3plMLKhx_Awd5_=w681-h482-no?authuser=0>)
 
 ## Stacks
 A stack is a linear data structure in which elements can be inserted and deleted only from one
@@ -9,6 +9,7 @@ inserted at the last is the first element to come out. The insertion of an eleme
 called push operation, and deletion of an element from the stack is called pop operation. In stack we
 always keep track of the last element present in the list with a pointer called top.
 
+![](https://lh3.googleusercontent.com/YU6XhqW2kYZLBt8z2TfCF6r_fXuy5fk0ojd0K_tPp2KWexE2O967munGQBp2_zcqnfxzeNwsrUg1bbg-An4Kmqb6WdX3VqUr8Qr7mvBljswbziRVqHZ_fv__4VKvzf6IWNyVRrORRwcD3tnNdJpZVT02dY7Ls8hu2efh64GuKqSE9z_jVyd_UAjvw4NDkiuPAfGpvLAz75J-ll_8hUDG7o_fbblFIEYHwN5GELB1il7Jvo93pW_oTGtcpC8XafsyKGA0Ga5hj7GyUG0KaLynpSgmmzctNfqxtcRZWiHgpiL6R4BHeY6WkA9QpQN3blX9dknUrCrXwWiYi1ADrprUG3dsiBiglUl14czYEgh6k5y2e1LCnK_1hdaEyJrdazWmpn5FwKZnY78VKi59Mh-5kn8VxrW2P4ZX673RIK7QA8P1mBrWZrnaf2jsaiFJ2UZxWT5IB-gAzHMk8NAZOOSqTygsZoA8SCc-oIVKvXWHwWA4ssBchbIJBYG3MoamI2tC-rvIDg0jX6bvxFbDp7p8uvrPaCy0khowRfq9sjLeyMWVWGMEARqDi3HUqL1v966orvq8TDIGYD4rlXhbU6QIjjUXnyd-KRUbjklrKyd81e287pf3NBYoDRF8w_CXihQBCjwMrkCFHKId065dDQIW23Ix8KAwReY1OjpWAIfuaWa7-wv_Wv2WIQJFRya7WgAPt_ZoSTnflqEk_ISCnDUnEabe2GNdtDKYO0uh31Fb7ViPicgBjkvdibPHE8D3=w700-h400-no?authuser=0)
 
 ## Queues
 A queue is a linear data structure in which elements can be inserted only from one side of the
@@ -19,6 +20,8 @@ an enqueue operation and the deletion of an element is called a dequeue operatio
 maintain two pointers, one pointing to the element which was inserted at the first and still present in the
 list with the front pointer and the second pointer pointing to the element inserted at the last with
 the rear pointer.
+
+![](https://lh3.googleusercontent.com/5t42Epmge8aPkFpgvByqVkXTIoGYhDyPhUPRAMoQDyieFEUpET5h809EZub03BVbK7nLwIX8T5xE8vHEpAP4MFhdHsc3O-lbTcBUmom4C_1o4CcXwSYxAqWQIkXpSLbg23bopBwGEgOTVoFwa8mhL7YCPhnlQHs-vBcvDl_8P8rjD1yTgXHksdf6mViw141BxopeVkX2yhhreReziUj7Jot9clrzvfgT5z1z5CU3fSraEaJGWUpgG7cy-YDiYUzgXwSVeUZdUmu3w6GIzbjLHWH2GxWOxOfFRq-H5Qr__vGz25s-6_KYoEVczEacYSYkqhT463tfaTbUcjcOA_ejhkiUKpHAmMbXLMDjMLhCVFeZss6xTuCD6VpIyuzYe_pg2s5GVprDxMc40ANpbFmEUuTtWOv44F4J53eOewGnSs6ctt-q-mtmB3ezLNzxWQlhGINq2k8oS0RTJDyIJ_q8bc4vncdd4xKLEPMlz0DTzPdRXeDOfSV4-QCfXZLZRPvr_r9ToZaeIanKnb7yazlRlPh_bJoVI1SOjy6fNN1NSrOHJHASwBN6RerrzQn1dMPLegKyied52eCnSf-5tsIzOcle3ffLCIUaVAFRPgQJFTfJAqxnxNlWRe_L7Tf13nOIiqfbw1WY2p-TOuCyYRQvajvSu0wpVSKt-ShkAXJbbDgShjoG_JM3CDojpd0Co6sG2Toooxp-lZx3I_AMeEZMpI1jV-KMKUBnT_FXlHVgBF1Ic9UFPDtgaC0Rwo9Y=w700-h400-no?authuser=0)
 
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
@@ -48,7 +51,7 @@ General
 
 ## Compilation & Output
 ### Your code will be compiled this way:
-**$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o monty
+**$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o monty***
 - Any output must be printed on stdout
 - Any error message must be printed on stderr
 
