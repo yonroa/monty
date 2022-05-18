@@ -23,6 +23,6 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
             return;
         }
     }
-    fprintf(stderr, "L%u: unknown instructions <%s>\n", number_line, command);
+    dprintf(stderr, "L%u: unknown instructions <%s>\n", number_line, command);
     exit(EXIT_FAILURE);
 }
