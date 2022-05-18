@@ -12,6 +12,8 @@ int main(int argc, char **argv)
 	char *line = NULL, *command = NULL;
 	size_t lon = 0;
 	unsigned int number_line = 0;
+	stack_t stack;
+
 
 	if (argc != 2)
 	{

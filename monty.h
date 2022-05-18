@@ -43,6 +43,7 @@ size_t print_stackint(const stack_t *h);
 stack_t *add_stackint(stack_t **head, const int n);
 stack_t *add_stackint_end(stack_t **head, const int n);
 int delete_stackint_at_index(stack_t **head, unsigned int index);
+void call_func(char *command, stack_t **stack, unsigned int number_line);
 
 /* Aux Functions */
 char **tokener(char *str, char *delim);
