@@ -10,12 +10,14 @@ void push_stack(stack_t **stack, unsigned int number_line)
     char *num = strtok(NULL, "\n\t\r ");
     if (_isdigit(num) == -1)
     {
-        dprintf(STDOUT_FILENO, "L%u: usage: push integer\n", number_line);
+        fprintf(stderr, "L%u: usage: push integer\n", number_line);
+        free_stacktint(stack);
         exit(EXIT_FAILURE);
     }
     if(!add_stackint(stack, atoi(num)))
     {
-        dprintf(STDOUT_FILENO, "Error: malloc failed\n");
+        fprintf(stderr, "Error: malloc failed\n");
+        free_stacktint(stack);
 		exit(EXIT_FAILURE);
     }
 }

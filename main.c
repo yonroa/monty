@@ -12,20 +12,22 @@ int main(int argc, char **argv)
 	char *line = NULL, *command = NULL;
 	size_t lon = 0;
 	unsigned int number_line = 0;
-	stack_t *stack;
+	stack_t *stack = NULL;
 
 
 	if (argc != 2)
 	{
-		dprintf(STDOUT_FILENO, "USAGE: monty file\n");
+		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	fd = fopen(argv[1], "r");
 	if (!fd)
 	{
-		dprintf(STDOUT_FILENO, "Error: Can't open file <%s>", argv[1]);
+		fprintf(stderr, "Error: Can't open file <%s>", argv[1]);
 		exit(EXIT_FAILURE);
 	}
+	on_exit(close_file, fd);
+	on_exit(free_line, &line);
 	while (getline(&line, &lon, fd) != -1)
 	{
 		++number_line;
@@ -33,5 +35,6 @@ int main(int argc, char **argv)
 		if (command != NULL && command[0] != '#')
 			call_func(command, &stack, number_line);
 	}
-	return (0);
+	free_stacktint(&stack);
+	exit(EXIT_SUCCESS);
 }

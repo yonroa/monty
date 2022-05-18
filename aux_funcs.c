@@ -15,3 +15,38 @@ int _isdigit(char *c)
 		return (-1);
 	return (_isdigit(c + 1));
 }
+
+void close_file(int status, void *arg)
+{
+	FILE *fd = (FILE *)arg;
+
+	(void)status;
+
+	fclose(fd);
+}
+
+/**
+ * free_stackint - frees a stack_t list
+ * @head: First node
+ */
+void free_stacktint(stack_t **head)
+{
+	stack_t *copy;
+
+	while (*head != NULL)
+	{
+		copy = (*head)->next;
+		free(*head);
+		*head = copy;
+	}
+}
+
+void free_line(int status, void *arg)
+{
+	char **line = arg;
+
+	(void)status;
+
+	if (*line != NULL)
+		free(*line);
+}

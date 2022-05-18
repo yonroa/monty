@@ -56,5 +56,8 @@ void nop_stack(stack_t **stack, unsigned int number_line);
 
 /* Free Functions */
 void free_tokens(char **token);
+void free_stacktint(stack_t **head);
+void close_file(int status, void *arg);
+void free_line(int status, void *arg);
 
 #endif
