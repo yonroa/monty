@@ -53,6 +53,9 @@ char **tokener(char *str, char *delim);
 int counter(char *string);
 int _isdigit(char *c);
 void nop_stack(stack_t **stack, unsigned int number_line);
+void pint_stack(stack_t **stack, unsigned int number_line);
+void pop_stack(stack_t **stack, unsigned int number_line);
+
 
 /* Free Functions */
 void free_tokens(char **token);
