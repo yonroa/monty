@@ -34,3 +34,14 @@ void pall_stack(stack_t **stack, unsigned int number_line)
     copy = *stack;
     print_stackint(copy);
 }
+
+/**
+ * @brief 
+ *
+ * 
+ */
+void nop_stack(stack_t **stack, unsigned int number_line)
+{
+    (void)(stack);
+    (void)(number_line);
+}

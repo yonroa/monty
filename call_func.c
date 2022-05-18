@@ -11,6 +11,7 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
     instruction_t ops[] = {
         {"push", push_stack},
         {"pall", pall_stack},
+        {"nop", nop_stack},
         {NULL, NULL}
     };
     int index;
