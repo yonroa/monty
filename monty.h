@@ -3,16 +3,10 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-
-/* Functios For The Stack */
-size_t print_stackint(const stack_t *h);
-stack_t *add_stackint(stack_t **head, const int n);
-stack_t *add_stackint_end(stack_t **head, const int n);
-int delete_stackint_at_index(stack_t **head, unsigned int index);
-
-/* Aux Functions */
-char **tokener(char *str, char *delim);
-int counter(char *string);
+#include <string.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -43,5 +37,18 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+/* Functios For The Stack */
+size_t print_stackint(const stack_t *h);
+stack_t *add_stackint(stack_t **head, const int n);
+stack_t *add_stackint_end(stack_t **head, const int n);
+int delete_stackint_at_index(stack_t **head, unsigned int index);
+
+/* Aux Functions */
+char **tokener(char *str, char *delim);
+int counter(char *string);
+
+/* Free Functions */
+void free_tokens(char **token);
 
 #endif

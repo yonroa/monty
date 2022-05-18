@@ -26,9 +26,9 @@ size_t print_stackint(const stack_t *h)
  */
 stack_t *add_stackint(stack_t **head, const int n)
 {
-	dlistint_t *new = NULL;
+	stack_t *new = NULL;
 
-	new = malloc(sizeof(dlistint_t));
+	new = malloc(sizeof(stack_t));
 	if (!new)
 	return (NULL);
 	new->n = n;

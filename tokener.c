@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * tokener - separate the words
@@ -54,4 +54,20 @@ int counter(char *string)
 		++string;
 	}
 	return (iter);
+}
+
+/**
+ * free_tokens - function that frees the memory space of all the tokens
+ * @token: double pointer to be freed.
+ */
+void free_tokens(char **token)
+{
+	int index = 0;
+
+	while (token[index] != NULL)
+	{
+		free(token[index]);
+		index++;
+	}
+	free(token);
 }
