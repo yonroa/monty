@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	fd = fopen(argv[1], O_RDONLY);
+	fd = fopen(argv[1], "r");
 	if (!fd)
 	{
 		fprintf(stderr, "Error: Can't open file <%s>", argv[1]);

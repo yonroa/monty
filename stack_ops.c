@@ -7,7 +7,7 @@
  */
 void push_stack(stack_t **stack, unsigned int number_line)
 {
-    char *num = strtok(NULL, "\n\t\r ");
+    char *num = strtok(NULL, "\t\r ");
     if(!add_stackint(stack, atoi(num)))
     {
         fprintf(stderr, "L%u: usage: push integer\n", number_line);

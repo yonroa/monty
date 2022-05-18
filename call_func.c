@@ -20,8 +20,9 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
         if(strcmp(ops[index].opcode, command) == 0)
         {
             ops[index].f(stack, number_line);
+            return;
         }
     }
-    fprintf(stderr, "L%u: unknown instructions <%s>", number_line, command);
+    fprintf(stderr, "L%u: unknown instructions <%s>\n", number_line, command);
     exit(EXIT_FAILURE);
 }
