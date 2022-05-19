@@ -16,6 +16,11 @@ int _isdigit(char *c)
 	return (_isdigit(c + 1));
 }
 
+/**
+ * close_file - Close the file when exit
+ * @status: Nothing
+ * @arg: File to be closed
+ */
 void close_file(int status, void *arg)
 {
 	FILE *fd = (FILE *)arg;
@@ -26,7 +31,7 @@ void close_file(int status, void *arg)
 }
 
 /**
- * free_stackint - frees a stack_t list
+ * free_stacktint - frees a stack_t list
  * @head: First node
  */
 void free_stacktint(stack_t **head)
@@ -41,6 +46,11 @@ void free_stacktint(stack_t **head)
 	}
 }
 
+/**
+ * free_line - Frees the commands when exit
+ * @status: Nothing
+ * @arg: Address of the commands
+ */
 void free_line(int status, void *arg)
 {
 	char **line = arg;

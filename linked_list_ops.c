@@ -76,8 +76,6 @@ stack_t *add_stackint_end(stack_t **head, const int n)
 /**
  * delete_stackint_at_index - deletes the node at index index of a stack_t
  * @head: First node
- * @index: Position of the node
- * Return: 1 if it succeeded, -1 if it failed
  */
 void delete_stackint_at_index(stack_t **head)
 {
