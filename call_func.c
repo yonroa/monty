@@ -13,6 +13,7 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
         {"pall", pall_stack},
         {"pint", pint_stack},
         {"pop", pop_stack},
+        {"swap", swap_stack},
         {"nop", nop_stack},
         {NULL, NULL}
     };
