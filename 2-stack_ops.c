@@ -2,8 +2,9 @@
 
 /**
  * swap_stack - swaps the top two elements of the stack
- * @stack: Stack to be swaped
- * @number_line: Line of the file
+ * @stack: the satck to be analize
+ * @number_line: the number line
+ * Return: The new stack
  */
 void swap_stack(stack_t **stack, unsigned int number_line)
 {
