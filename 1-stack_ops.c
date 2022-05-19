@@ -10,7 +10,7 @@ void push_stack(stack_t **stack, unsigned int number_line)
 {
 	char *num = strtok(NULL, "\n\t\r ");
 
-	if (_isdigit(num) == -1)
+	if (_isdigit(num) == -1 || !num)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", number_line);
 		free_stacktint(stack);
@@ -52,7 +52,7 @@ void pint_stack(stack_t **stack, unsigned int number_line)
 {
 	if (!*stack)
 	{
-		fprintf(stderr, "L<%u>: can't pint, stack empty\n", number_line);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", number_line);
 		exit(EXIT_FAILURE);
 	}
 	printf("%i\n", (*stack)->n);
@@ -68,7 +68,7 @@ void pop_stack(stack_t **stack, unsigned int number_line)
 {
 	if (!*stack)
 	{
-		fprintf(stderr, "L<%u>: can't pop an empty stack\n", number_line);
+		fprintf(stderr, "L%u: can't pop an empty stack\n", number_line);
 		exit(EXIT_FAILURE);
 	}
 	delete_stackint_at_index(stack);

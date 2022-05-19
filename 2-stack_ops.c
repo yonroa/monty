@@ -13,7 +13,7 @@ void swap_stack(stack_t **stack, unsigned int number_line)
 
 	if (!tmp || !tmp->next)
 	{
-		fprintf(stderr, "L<%u>: can't swap, stack too short\n", number_line);
+		fprintf(stderr, "L%u: can't swap, stack too short\n", number_line);
 		exit(EXIT_FAILURE);
 	}
 	copy = tmp->n;
@@ -32,7 +32,7 @@ void add_stack(stack_t **stack, unsigned int number_line)
 
 	if (!tmp || !tmp->next)
 	{
-		fprintf(stderr, "L<%u>: can't add, stack too short\n", number_line);
+		fprintf(stderr, "L%u: can't add, stack too short\n", number_line);
 		exit(EXIT_FAILURE);
 	}
 	tmp->next->n = tmp->next->n + tmp->n;
