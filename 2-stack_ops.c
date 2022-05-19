@@ -39,6 +39,13 @@ void add_stack(stack_t **stack, unsigned int number_line)
 	delete_stackint_at_index(stack);
 }
 
+/**
+ * sub_stack - subtracts the top element of the stack
+ * from the second top element of the stack
+ * @stack: stack to be analize
+ * @number_line: The line to be used to print error
+ * Return: The new stack
+ */
 void sub_stack(stack_t **stack, unsigned int number_line)
 {
 	stack_t *tmp = *stack;
@@ -52,6 +59,13 @@ void sub_stack(stack_t **stack, unsigned int number_line)
 	delete_stackint_at_index(stack);
 }
 
+/**
+ * div_stack - divides the second top element
+ * of the stack by the top element of the stack
+ * @stack: stack to be analize
+ * @number_line: The line to be used to print error
+ * Return: The new stack
+ */
 void div_stack(stack_t **stack, unsigned int number_line)
 {
 	stack_t *tmp = *stack;
@@ -70,6 +84,13 @@ void div_stack(stack_t **stack, unsigned int number_line)
 	delete_stackint_at_index(stack);
 }
 
+/**
+ * mul_stack - multiplies the second top element
+ * of the stack with the top element of the stack
+ * @stack: stack to be analize
+ * @number_line: The line to be used to print error
+ * Return: The new stack
+ */
 void mul_stack(stack_t **stack, unsigned int number_line)
 {
 	stack_t *tmp = *stack;
