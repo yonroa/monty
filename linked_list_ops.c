@@ -79,39 +79,19 @@ stack_t *add_stackint_end(stack_t **head, const int n)
  * @index: Position of the node
  * Return: 1 if it succeeded, -1 if it failed
  */
-int delete_stackint_at_index(stack_t **head, unsigned int index)
+void delete_stackint_at_index(stack_t **head)
 {
 	stack_t *current = *head;
-	stack_t *tmp;
-	unsigned int idx = 0;
 
-	if (!*head)
-		return (-1);
-	if (index == 0)
+	if (*head)
 	{
 		if ((*head)->next)
 		{
 			*head = (*head)->next;
 			(*head)->prev = NULL;
-			free(current);
 		}
 		else
 			*head = NULL;
-		return (1);
+		free(current);
 	}
-	while (current)
-	{
-		if (idx == (index - 1))
-		{
-			tmp = current->next;
-			if (tmp->next)
-				tmp->next->prev = current;
-			current->next = tmp->next;
-			free(tmp);
-			return (1);
-		}
-		idx++;
-		current = current->next;
-	}
-	return (-1);
 }

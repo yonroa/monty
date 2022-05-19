@@ -43,19 +43,19 @@ typedef struct instruction_s
 size_t print_stackint(const stack_t *h);
 stack_t *add_stackint(stack_t **head, const int n);
 stack_t *add_stackint_end(stack_t **head, const int n);
-int delete_stackint_at_index(stack_t **head, unsigned int index);
+void delete_stackint_at_index(stack_t **head);
 void call_func(char *command, stack_t **stack, unsigned int number_line);
 void push_stack(stack_t **stack, unsigned int number_line);
 void pall_stack(stack_t **stack, unsigned int number_line);
+void nop_stack(stack_t **stack, unsigned int number_line);
+void pint_stack(stack_t **stack, unsigned int number_line);
+void pop_stack(stack_t **stack, unsigned int number_line);
+
 
 /* Aux Functions */
 char **tokener(char *str, char *delim);
 int counter(char *string);
 int _isdigit(char *c);
-void nop_stack(stack_t **stack, unsigned int number_line);
-void pint_stack(stack_t **stack, unsigned int number_line);
-void pop_stack(stack_t **stack, unsigned int number_line);
-
 
 /* Free Functions */
 void free_tokens(char **token);

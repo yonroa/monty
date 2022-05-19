@@ -45,7 +45,7 @@ void pint_stack(stack_t **stack, unsigned int number_line)
 {
     if (!*stack)
     {
-        fprintf(stderr, "L<%u>: can't pint, stack empty", number_line);
+        fprintf(stderr, "L<%u>: can't pint, stack empty\n", number_line);
         exit(EXIT_FAILURE);
     }
     printf("%i\n", (*stack)->n);
@@ -60,10 +60,10 @@ void pop_stack(stack_t **stack, unsigned int number_line)
 { 
     if (!*stack)
     {
-        fprintf(stderr, "L<%u>: can't pop an empty stack", number_line);
+        fprintf(stderr, "L<%u>: can't pop an empty stack\n", number_line);
         exit(EXIT_FAILURE);
     }
-    delete_stackint_at_index(stack, 0);
+    delete_stackint_at_index(stack);
 }
 
 /**
