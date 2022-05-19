@@ -81,6 +81,6 @@ void pop_stack(stack_t **stack, unsigned int number_line)
  */
 void nop_stack(stack_t **stack, unsigned int number_line)
 {
-	(void)(stack);
-	(void)(number_line);
+	(void)stack;
+	(void)number_line;
 }
