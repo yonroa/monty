@@ -16,6 +16,10 @@ void call_func(char *command, stack_t **stack, unsigned int number_line)
 		{"swap", swap_stack},
 		{"add", add_stack},
 		{"nop", nop_stack},
+		{"sub", sub_stack},
+		{"div", div_stack},
+		{"mul", mul_stack},
+		{"mod", mod_stack},
 		{NULL, NULL}};
 	int index;
 

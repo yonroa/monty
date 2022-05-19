@@ -52,6 +52,10 @@ void pint_stack(stack_t **stack, unsigned int number_line);
 void pop_stack(stack_t **stack, unsigned int number_line);
 void swap_stack(stack_t **stack, unsigned int number_line);
 void add_stack(stack_t **stack, unsigned int number_line);
+void sub_stack(stack_t **stack, unsigned int number_line);
+void div_stack(stack_t **stack, unsigned int number_line);
+void mul_stack(stack_t **stack, unsigned int number_line);
+void mod_stack(stack_t **stack, unsigned int number_line);
 
 
 /* Aux Functions */
